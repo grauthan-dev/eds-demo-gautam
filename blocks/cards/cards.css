@@ -10,14 +10,25 @@
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Align items in a column */
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  /*margin: 16px;*/
+   flex-grow: 1; /* Allow this section to grow and fill available space */
+   margin: 0; /* Remove margin */
+   background-color: #000; /* Black background for the text section */
+   color: #fff; /* White text color */
+   padding: 16px; /* Add padding for spacing inside */
 }
 
 .cards .cards-card-image {
   line-height: 0;
+}
+
+.cards .cards-card-date {
+  font-size: 14px; /* Adjust font size */
 }
 
 .cards > ul > li img {
